@@ -21,22 +21,6 @@ db.serialize(() => {
 const client = new Discord.Client();
 client.login(token);
 
-const fetch = require('node-fetch')
-
-console.log(url)
-setInterval(async () => {
-  await client.channels.fetch('748344912424075356').then(channel => {
-      channel.messages.fetch({limit:1}).then(async messages=>{
-          let message = messages.first();
-          if (message.author.bot){
-              message.delete();
-          }
-          channel.send('alive')
-          await fetch(url).then(console.log('Pinged!'));
-      });
-  });
-}, 240000);
-
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync("./commands").filter(file=>file.endsWith(".js"));
 for(let file of commandFiles){
