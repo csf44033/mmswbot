@@ -4,12 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "author": "John Porter",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.3.1",
-    "mysql2": "^2.1.0"
+    "discord.js": "^12.5.1",
+    "sqlite3": "^5.0.2"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
