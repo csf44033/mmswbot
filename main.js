@@ -1,4 +1,4 @@
-const {prefix, token, url} = require('./config.json');
+const {prefix, token} = require('./config.json');
 const Discord = require("discord.js");
 const fs = require("fs");
 
