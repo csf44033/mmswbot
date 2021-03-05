@@ -9,7 +9,7 @@
   "author": "John Porter",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.3.1",
     "sqlite3": "^5.0.2"
   },
   "engines": {
